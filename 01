@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+   int arr[5] = {12, 56, 34, 78, 100};
+   int max = arr[0]; // Assume the first element is the maximum
+   
+   // Loop through the remaining elements and update the maximum if necessary
+   for (int i = 1; i < 5; i++) {
+      if (arr[i] > max) {
+         max = arr[i];
+      }
+   }
+   
+   printf("The largest element in the array is: %d\n", max);
+   
+   return 0;
+}
+output:
+The largest element in the array is: 100
